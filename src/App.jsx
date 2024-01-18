@@ -8,18 +8,19 @@ import { Contacts } from './pages/Contacts';
 import { Favorites } from './pages/Favorites';
 import { Cart } from './pages/Cart';
 import { MainLayout } from './layout';
+import { APP_ROUTES } from './helpers/RoutesHelper';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<MainLayout />}>
-          <Route path="" element={<Home />} />
-          <Route path="catalog" element={<Catalog />} />
-          <Route path="about" element={<About />} />
-          <Route path="contacts" element={<Contacts />} />
-          <Route path="favorites" element={<Favorites />} />
-          <Route path="cart" element={<Cart />} />
+          <Route path={APP_ROUTES.HOME} element={<Home />} />
+          <Route path={APP_ROUTES.CATALOG} element={<Catalog />} />
+          <Route path={APP_ROUTES.ABOUT} element={<About />} />
+          <Route path={APP_ROUTES.CONTACTS} element={<Contacts />} />
+          <Route path={APP_ROUTES.FAVORITES} element={<Favorites />} />
+          <Route path={APP_ROUTES.CART} element={<Cart />} />
         </Route>
       </Routes>
     </Router>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ConfigProvider } from 'antd';
+import PropTypes from 'prop-types';
 
 export const Providers = ({ children }) => {
   return (
@@ -8,6 +9,7 @@ export const Providers = ({ children }) => {
         token: {
           fontFamily: 'Roboto',
           colorPrimaryBg: '#001529',
+          colorPrimary: '#f2cd00',
         },
         components: {
             Typography: {
@@ -15,9 +17,10 @@ export const Providers = ({ children }) => {
             },
             Layout: {
                 footerBg: '#001529',
-                footerPadding: '10px 50px',
-                paddingContentVertical: '20px',
-                paddingContentHorizontal: '50px',
+            },
+            Menu: {
+                colorBgContainer: '#001529',
+                colorText: '#FFFFFF',
             }
         }
       }}
@@ -28,5 +31,5 @@ export const Providers = ({ children }) => {
 };
 
 Providers.propTypes = {
-  children: React.Children,
+  children: PropTypes.object,
 };

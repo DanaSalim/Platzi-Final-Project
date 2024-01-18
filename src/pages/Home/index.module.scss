@@ -1,0 +1,37 @@
+.home {
+    margin: 20px 0;
+}
+
+.blockLogo {
+    display: block;
+    margin: 0 auto;
+}
+
+.video {
+    display: block;
+    margin: 0 auto;
+    aspect-ratio: 16/9;
+    width: 800px;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 16px;
+    border-radius: 16px;
+    box-shadow: lightgrey 2px 2px 3px;
+}
+
+:global(.slick-track){
+    padding-bottom: 12px;
+}
+
+.dots {
+
+    li {
+        button {
+            background: #f2cd00 !important;
+        }
+    }
+}
+
+.carousel {
+    max-width: 100%;
+}

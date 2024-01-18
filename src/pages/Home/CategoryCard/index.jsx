@@ -11,6 +11,7 @@ import { createPathWithId } from '../../../helpers/URLHelper';
 const {Meta} = Card;
 
 export const CategoryCard = ({id, name, image}) => {
+    
   return (
     <Link to={createPathWithId(APP_ROUTES.CATALOG, id)} key={id}>
         <StyledCard cover={<img src={image} alt={name} style={{width: 165}}/>} >

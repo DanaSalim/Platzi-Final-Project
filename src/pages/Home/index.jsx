@@ -51,7 +51,7 @@ export const Home = () => {
         </Flex>
     </StyledCard>
     <StyledCard>
-        <Typography.Title level={6} style={{textAlign: 'center', marginBottom: 32}}>Лучшие товары</Typography.Title>
+        <Typography.Title level={2} style={{textAlign: 'center', marginBottom: 32}}>Лучшие товары</Typography.Title>
         <Carousel rootClassName={styles.carousel} responsive={[]} variableWidth swipeToSlide draggable dotPosition='-4px' dots={{className: styles.dots}} style={{paddingBottom: 20}}>
             {
                 !productsLoaded ? <Spin size='large' style={{margin: '0 auto', width: '100%', padding: 10}}/>

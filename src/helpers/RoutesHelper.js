@@ -5,5 +5,5 @@ export const APP_ROUTES = {
     CONTACTS: 'contacts',
     FAVORITES: 'favorites',
     CART: 'cart',
-    PRODUCT_DETAILS: 'product-details'
+    PRODUCT_DETAILS: 'product-details/:id'
 };

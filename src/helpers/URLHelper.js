@@ -3,8 +3,11 @@
  * @param {number} id
  * @return {string}
  */
-export function createPathWithId(segment, id) {
-    return `${segment}/${id}`;
+export function createPathWithId(segment, id, relative = true) {
+    if(segment.includes('/:')) {
+        segment = segment.split('/:')[0]
+    }
+    return `${!relative ? '/' : ''}${segment}/${id}`;
 }
 
 /**

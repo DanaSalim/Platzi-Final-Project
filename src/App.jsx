@@ -9,6 +9,7 @@ import { Favorites } from './pages/Favorites';
 import { Cart } from './pages/Cart';
 import { MainLayout } from './layout';
 import { APP_ROUTES } from './helpers/RoutesHelper';
+import { ProductDetails } from './pages/ProductDetails';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path={APP_ROUTES.CONTACTS} element={<Contacts />} />
           <Route path={APP_ROUTES.FAVORITES} element={<Favorites />} />
           <Route path={APP_ROUTES.CART} element={<Cart />} />
+          <Route path={APP_ROUTES.PRODUCT_DETAILS} element={<ProductDetails/>}/>
         </Route>
       </Routes>
     </Router>

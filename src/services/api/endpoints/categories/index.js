@@ -1,7 +1,6 @@
 import api, {API_ENDPOINTS} from "../../api";
 import { createPathWithParams } from "../../../../helpers/URLHelper";
 
-
 /**
  * @param {Object<string, string | number>} params
  * @return {Promise<Array<Object>>}

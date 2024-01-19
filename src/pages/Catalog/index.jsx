@@ -49,7 +49,7 @@ export const Catalog = () => {
 return <Flex vertical gap={20} className={styles.catalog}>
     <StyledCard>
         <Flex justify='space-between' gap='large' wrap={flexWrap}>
-            <Flex justify='flex-start' gap={10} wrap={flexWrap}>
+            <Flex justify='flex-start' gap={10} wrap={'wrap'}>
                 {categories.map(({id, name}) => <CategoryItem key={id} current={id === categoryId} id={id} name={name} onClick={() => {searchParams.append('categoryId', id); setSearchParams(Object.fromEntries(searchParams));}}/>)}
             </Flex>
             <Search placeholder='Поиск' onSearch={setSearch} loading={!productsLoaded}/>
@@ -60,7 +60,7 @@ return <Flex vertical gap={20} className={styles.catalog}>
             {
                 !productsLoaded ? <Spin size='large' style={{margin: 'auto auto'}}/>
                     :
-                    products.map(({id, name, image}) => products.map(({id, title, price, images}) => <ProductCard key={id} id={id} title={title} price={price} image={images[0]} />))
+                    products.map(({id, title, price, images}) => <ProductCard key={id} id={id} title={title} price={price} image={images[0]} />)
             }
         </Flex>
     </StyledCard>

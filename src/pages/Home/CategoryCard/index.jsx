@@ -14,7 +14,7 @@ export const CategoryCard = ({id, name, image}) => {
     
   return (
     <Link to={createPathWithParams(APP_ROUTES.CATALOG, {categoryId: id})} key={id}>
-        <StyledCard cover={<img src={image} alt={name} style={{width: 165, height: 165}}/>} >
+        <StyledCard cover={<img src={image} alt={name} style={{minWidth: 165, height: 165}}/>} >
             <Meta title={name} style={{width: '100%', textAlign: 'center'}}/>
         </StyledCard>
     </Link>

@@ -12,6 +12,15 @@ export function createPathWithId(segment, id, relative = true) {
 
 /**
  * @param {string} segment
+ * @param {number} id
+ * @return {string}
+ */
+export function createPath(route, relative = true) {
+    return `${!relative ? '/' : ''}${route}`;
+}
+
+/**
+ * @param {string} segment
  * @param {Object<string, string | number>} params
  * @return {string}
  */

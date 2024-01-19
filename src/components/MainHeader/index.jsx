@@ -5,8 +5,10 @@ import { useMemo, useState } from 'react';
 import { APP_ROUTES } from '../../helpers/RoutesHelper';
 import { Logo } from '../icons/Logo';
 import styles from './index.module.scss';
-import { HeartOutlined, MenuOutlined, ShoppingCartOutlined } from '@ant-design/icons';
+import { MenuOutlined} from '@ant-design/icons';
 import { useWindowSize } from '@uidotdev/usehooks';
+import { CartIcon } from '../icons/CartIcon';
+import { HeartIcon } from '../icons/HeartIcon';
 
 const { Header } = Layout;
 
@@ -65,11 +67,11 @@ export const MainHeader = () => {
                 <Menu mode="horizontal" items={navItems} selectedKeys={[currentKey]}  style={{width: 340, marginRight: 'auto'}}/>
             }
             <Flex gap="large" align="center">
-                <Link to={APP_ROUTES.FAVORITES} style={{height: 50}}>
-                    <HeartOutlined style={{fontSize: 32, color: '#f2cd00'}} className={styles.icon}/>
+                <Link to={APP_ROUTES.FAVORITE} style={{height: 50}}>
+                    <HeartIcon style={{fontSize: 32, color: '#f2cd00'}}/>
                 </Link>
                 <Link to={APP_ROUTES.CART} style={{height: 50}}>
-                    <ShoppingCartOutlined style={{fontSize: 32, color: '#f2cd00'}} className={styles.icon}/>
+                    <CartIcon style={{fontSize: 32, color: '#f2cd00'}}/>
                 </Link>
             </Flex>
         </Flex>

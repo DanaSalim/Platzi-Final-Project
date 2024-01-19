@@ -23,6 +23,10 @@
     padding-bottom: 12px;
 }
 
+:global(.slick-slide){
+    pointer-events: all !important;
+}
+
 .dots {
 
     li {

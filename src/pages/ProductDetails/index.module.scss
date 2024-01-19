@@ -1,0 +1,12 @@
+.productDetails {
+    margin: 20px 0;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.icon:hover {
+    filter: brightness(1.1);
+}

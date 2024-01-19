@@ -23,7 +23,6 @@ export const MainHeader = () => {
         if(key === APP_ROUTES.HOME){
             return pathname === '/';
         }
-        console.log(key.length, pathname,pathname.slice(1).includes(key))
 
         return pathname.includes(key);
     }), [pathname]);

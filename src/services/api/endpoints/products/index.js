@@ -1,5 +1,5 @@
 import api, {API_ENDPOINTS} from "../../api";
-import { createPathWithParams } from "../../../../helpers/URLHelper";
+import { createPathWithId, createPathWithParams } from "../../../../helpers/URLHelper";
 
 /**
  * @param {Object<string, string | number>} params
@@ -13,6 +13,16 @@ async function getAllProducts(params = {}) {
     return data;
 }
 
+/**
+ * @param {Object<string, string | number>} params
+ * @return {Promise<Array<Object>>}
+ */
+async function getProductById(id) {
+    const {data} = await api.get(createPathWithId(API_ENDPOINTS.PRODUCT, id));
+    return data;
+}
+
 export {
-    getAllProducts
+    getAllProducts,
+    getProductById
 };

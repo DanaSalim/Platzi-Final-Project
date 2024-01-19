@@ -10,8 +10,7 @@ import { ProductCard } from '../../components/ProductCard';
 
 const {Meta} = Card;
 
-const  CATEGORY_LIMIT = 10;
-const  TOP_PRODUCTS_LIMIT = 20;
+const TOP_PRODUCTS_LIMIT = 20;
 
 export const Home = () => {
     const [categoriesLoaded, setCategoriesLoaded] = useState(false);
@@ -20,12 +19,11 @@ export const Home = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        getAllCategories({limit: CATEGORY_LIMIT}).then((categories) => {
+        getAllCategories().then((categories) => {
             setCategories(categories);
             setCategoriesLoaded(true);
         });
         getAllProducts({limit: TOP_PRODUCTS_LIMIT}).then((products) => {
-            console.log('products: ', products)
             setProducts(products);
             setProductsLoaded(true);
         });

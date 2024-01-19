@@ -14,8 +14,8 @@ async function getAllProducts(params = {}) {
 }
 
 /**
- * @param {Object<string, string | number>} params
- * @return {Promise<Array<Object>>}
+ * @param {number} id
+ * @return {Promise<Object>}
  */
 async function getProductById(id) {
     const {data} = await api.get(createPathWithId(API_ENDPOINTS.PRODUCT, id));

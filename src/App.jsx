@@ -5,7 +5,7 @@ import { Home } from './pages/Home';
 import { Catalog } from './pages/Catalog';
 import { About } from './pages/About';
 import { Contacts } from './pages/Contacts';
-import { Favorites } from './pages/Favorites';
+import { Favorite } from './pages/Favorite';
 import { Cart } from './pages/Cart';
 import { MainLayout } from './layout';
 import { APP_ROUTES } from './helpers/RoutesHelper';
@@ -20,7 +20,7 @@ function App() {
           <Route path={APP_ROUTES.CATALOG} element={<Catalog />} />
           <Route path={APP_ROUTES.ABOUT} element={<About />} />
           <Route path={APP_ROUTES.CONTACTS} element={<Contacts />} />
-          <Route path={APP_ROUTES.FAVORITES} element={<Favorites />} />
+          <Route path={APP_ROUTES.FAVORITE} element={<Favorite />} />
           <Route path={APP_ROUTES.CART} element={<Cart />} />
           <Route path={APP_ROUTES.PRODUCT_DETAILS} element={<ProductDetails/>}/>
         </Route>

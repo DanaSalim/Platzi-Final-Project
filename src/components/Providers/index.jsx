@@ -1,8 +1,11 @@
 import React from 'react';
 import { ConfigProvider } from 'antd';
 import PropTypes from 'prop-types';
+import {AppContext} from '../../context/AppContext';
+import useAppContext from '../../hooks/useAppContext';
 
 export const Providers = ({ children }) => {
+  const appContextValue = useAppContext();
   return (
     <ConfigProvider
       theme={{
@@ -25,7 +28,9 @@ export const Providers = ({ children }) => {
         }
       }}
     >
-      {children}
+        <AppContext.Provider value={appContextValue}>
+            {children}
+        </AppContext.Provider>
     </ConfigProvider>
   );
 };

@@ -3,7 +3,7 @@ export const APP_ROUTES = {
     CATALOG: 'catalog',
     ABOUT: 'about',
     CONTACTS: 'contacts',
-    FAVORITES: 'favorites',
+    FAVORITE: 'favorite',
     CART: 'cart',
     PRODUCT_DETAILS: 'product-details/:id'
 };

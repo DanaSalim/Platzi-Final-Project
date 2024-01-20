@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios';
 
 export const BACKEND_URL = 'https://api.escuelajs.co/api/v1';
 const REQUEST_TIMEOUT = 5000;

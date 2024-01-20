@@ -1,5 +1,4 @@
-import { Flex, Image, Space, Typography} from 'antd';
-import {GithubOutlined} from '@ant-design/icons';
+import { Flex, Image, Typography} from 'antd';
 import { useWindowSize } from '@uidotdev/usehooks';
 
 import { StyledCard } from '../../components/StyledCard';

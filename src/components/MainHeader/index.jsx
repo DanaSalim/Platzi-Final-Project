@@ -30,10 +30,6 @@ export const MainHeader = () => {
     }), [pathname]);
     const {width} = useWindowSize();
     const [navOpen, setNavOpen] = useState(false);
-
-    const hideNav = () => {
-      setNavOpen(false);
-    };
   
     const handleNavOpenChange = (newOpen) => {
       setNavOpen(newOpen);

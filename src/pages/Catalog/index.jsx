@@ -50,7 +50,7 @@ return <Flex vertical gap={20} className={styles.catalog}>
     <StyledCard>
         <Flex justify='space-between' gap='large' wrap={flexWrap}>
             <Flex justify='flex-start' gap={10} wrap={'wrap'}>
-                {categories.map(({id, name}) => <CategoryItem key={id} current={id === categoryId} id={id} name={name} onClick={() => {searchParams.append('categoryId', id); setSearchParams(Object.fromEntries(searchParams));}}/>)}
+                {categories.map(({id, name}) => <CategoryItem key={id} current={id === categoryId} name={name} onClick={() => {searchParams.append('categoryId', id); setSearchParams(Object.fromEntries(searchParams));}}/>)}
             </Flex>
             <Search placeholder='Поиск' onSearch={setSearch} loading={!productsLoaded}/>
         </Flex>

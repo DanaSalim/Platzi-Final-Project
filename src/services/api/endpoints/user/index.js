@@ -1,5 +1,4 @@
 import api, {API_ENDPOINTS} from '../../api';
-import { createPathWithParams } from '../../../../helpers/URLHelper';
 
 /**
 * @typedef {Object} UserCreate

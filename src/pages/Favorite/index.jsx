@@ -11,7 +11,6 @@ export const Favorite = () => {
     const {favoriteProductsIds} = useContext(AppContext);
     const [productsLoaded, setProductsLoaded] = useState(false);
     const [products, setProducts] = useState([]);
-    const [search, setSearch] = useState('');
 
     useEffect(() => {
         const productsPromises = favoriteProductsIds.map(id => getProductById(id));

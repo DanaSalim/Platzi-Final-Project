@@ -42,7 +42,7 @@ export const ProductDetails = () => {
 
         getProductById(+id).then((product) => {
             setProduct(product);
-        }).catch(e => setIsValid(false));
+        }).catch(() => setIsValid(false));
     }, [id])
 
   return <StyledCard className={styles.productDetails}>

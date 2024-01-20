@@ -1,4 +1,4 @@
-import { Flex, Image, Space, Typography} from 'antd';
+import { Flex, Image, Typography} from 'antd';
 import {GithubOutlined} from '@ant-design/icons';
 import { useWindowSize } from '@uidotdev/usehooks';
 

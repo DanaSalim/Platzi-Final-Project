@@ -11,7 +11,6 @@ export const Cart = () => {
     const {cartProductsIds} = useContext(AppContext);
     const [productsLoaded, setProductsLoaded] = useState(false);
     const [products, setProducts] = useState([]);
-    const [search, setSearch] = useState('');
 
     useEffect(() => {
         const productsPromises = cartProductsIds.map(id => getProductById(id));

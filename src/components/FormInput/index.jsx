@@ -1,5 +1,4 @@
 import {Flex, Input, Typography} from 'antd';
-import React from 'react'
 import PropTypes from 'prop-types';
 
 export const FormInput = ({errorText, ...props}) => {

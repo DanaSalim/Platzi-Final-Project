@@ -10,7 +10,7 @@ export const MainFooter = () => {
   const {width} = useWindowSize();
   return (
     <Footer className={styles.footer}>
-      <Flex align="center" justify={width < 768 ? 'center' : 'start'}>
+      <Flex align='center' justify={width < 768 ? 'center' : 'start'}>
         <Logo />
       </Flex>
     </Footer>

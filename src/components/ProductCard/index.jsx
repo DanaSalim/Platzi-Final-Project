@@ -1,6 +1,6 @@
 import React, { useMemo, useContext, useCallback } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Card, Flex, Typography} from 'antd';
+import { Card, Flex, Typography, Button} from 'antd';
 import { PlusOutlined, MinusOutlined } from '@ant-design/icons';
 import PropTypes from 'prop-types';
 
@@ -62,18 +62,21 @@ export const ProductCard = ({id, title, price, image, rightSpacing = false, canR
         <StyledCard cover={<img src={image} alt={title} style={{width: 165, height: 165}}/>} >
             <Flex vertical gap='middle'>
                 <Meta title={title} style={{width: '100%', textAlign: 'center'}}/>
-                <Flex justify="space-between" align='center' style={{width: '100%'}}>
+                <Flex justify='space-between' align='center' style={{width: '100%'}}>
                     <Typography.Text style={{width: '50%'}}>{price}$</Typography.Text>
                     <HeartIcon onClick={onClickHeart} style={{fontSize: 24, marginRight: 12, color: isIdInFavoriteProducts(id) ? '#f2cd00' : 'lightgrey'}}/>
                     <CartIcon onClick={onClickCart} style={{fontSize: 24, color: isIdInCartProducts(id) ? '#f2cd00' : 'lightgrey'}}/>
                 </Flex>
                 {
                     showCartQuantityControls &&
-                    <Flex justify="space-between" align='center' style={{width: '100%'}}>
-                        <PlusOutlined onClick={onClickIncrement} style={{fontSize: 24}}/>
-                        <Typography.Text>{getProductCartQuantity(id)}</Typography.Text>
-                        <MinusOutlined onClick={onClickDecrement} style={{fontSize: 24}}/>
-                    </Flex>
+                    <>
+                        <Flex justify='space-between' align='center' style={{width: '100%'}}>
+                            <PlusOutlined onClick={onClickIncrement} style={{fontSize: 24}}/>
+                            <Typography.Text>{getProductCartQuantity(id)}</Typography.Text>
+                            <MinusOutlined onClick={onClickDecrement} style={{fontSize: 24}}/>
+                        </Flex>
+                        <Button onClick={(e) => {e.preventDefault(); navigate(createPath(APP_ROUTES.BUY, false));}}>Купить</Button>
+                    </>
                 }
             </Flex>
         </StyledCard>

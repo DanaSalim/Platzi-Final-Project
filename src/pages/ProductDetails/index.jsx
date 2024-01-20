@@ -64,7 +64,7 @@ export const ProductDetails = () => {
                         <Typography.Title level={3}>Цена:
                             <Typography.Text style={{fontSize: 18, marginLeft: 5}}>{product.price}$</Typography.Text>
                         </Typography.Title>
-                        <Flex justify="space-between" align='center' style={{width: 120, alignSelf: 'flex-end', justifySelf: 'flex-end'}}>
+                        <Flex justify='space-between' align='center' style={{width: 120, alignSelf: 'flex-end', justifySelf: 'flex-end'}}>
                             <HeartIcon onClick={onClickHeart} style={{fontSize: 48, color: isIdInFavoriteProducts(+id) ? '#f2cd00' : 'lightgrey'}}/>
                             <CartIcon onClick={onClickCart} style={{fontSize: 48, color: isIdInCartProducts(+id) ? '#f2cd00' : 'lightgrey'}}/>
                         </Flex>

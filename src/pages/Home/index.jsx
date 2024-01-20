@@ -32,11 +32,11 @@ export const Home = () => {
   return <Flex vertical gap={20} className={styles.home}>
     <StyledCard>
         <Logo className={styles.blockLogo} width={260} height={126}/>
-        <Meta title="Добро пожаловать в наш магазин!" description="Мы гордимся тем, что предлагаем широкий ассортимент товаров высочайшего качества в различных категориях. Независимо от того, что вы ищете — модную одежду, электронику последнего поколения или предметы интерьера, у нас вы обязательно найдёте то, что вас заинтересует. Разнообразие наших товаров сочетается с безупречным качеством, чтобы удовлетворить самые изысканные вкусы. Добро пожаловать в мир качественных покупок!" style={{width: '100%'}}/>
+        <Meta title='Добро пожаловать в наш магазин!' description='Мы гордимся тем, что предлагаем широкий ассортимент товаров высочайшего качества в различных категориях. Независимо от того, что вы ищете — модную одежду, электронику последнего поколения или предметы интерьера, у нас вы обязательно найдёте то, что вас заинтересует. Разнообразие наших товаров сочетается с безупречным качеством, чтобы удовлетворить самые изысканные вкусы. Добро пожаловать в мир качественных покупок!' style={{width: '100%'}}/>
     </StyledCard>
     <StyledCard>
-        <iframe className={styles.video} width="560" height="315" src="https://www.youtube.com/embed/nxSDHBdsWqA?si=yibVRasZ4deModBP" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>
-        <Meta title="Специальные предложения для вас!" description="Откройте для себя удивительные акции и специальные предложения в нашем магазине-маркетплейсе. Независимо от того, что вы ищете, у нас всегда есть выгодные предложения по широкому ассортименту товаров. Экономьте на покупках и получайте больше за свои деньги — у нас всегда найдется что-то особенное для каждого." style={{width: '100%'}}/>
+        <iframe className={styles.video} width='560' height='315' src='https://www.youtube.com/embed/nxSDHBdsWqA?si=yibVRasZ4deModBP' title='YouTube video player' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen'></iframe>
+        <Meta title='Специальные предложения для вас!' description='Откройте для себя удивительные акции и специальные предложения в нашем магазине-маркетплейсе. Независимо от того, что вы ищете, у нас всегда есть выгодные предложения по широкому ассортименту товаров. Экономьте на покупках и получайте больше за свои деньги — у нас всегда найдется что-то особенное для каждого.' style={{width: '100%'}}/>
     </StyledCard>
     <StyledCard>
         <Typography.Title level={2} style={{textAlign: 'center', marginBottom: 32}}>Категории</Typography.Title>

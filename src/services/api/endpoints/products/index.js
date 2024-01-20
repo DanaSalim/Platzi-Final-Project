@@ -1,5 +1,5 @@
-import api, {API_ENDPOINTS} from "../../api";
-import { createPathWithId, createPathWithParams } from "../../../../helpers/URLHelper";
+import api, {API_ENDPOINTS} from '../../api';
+import { createPathWithId, createPathWithParams } from '../../../../helpers/URLHelper';
 
 /**
  * @param {Object<string, string | number>} params
